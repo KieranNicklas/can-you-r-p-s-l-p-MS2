@@ -54,11 +54,10 @@ function startGame(playerChoice) {
 
 /* Function to determine winner of each round */
 function checkScore(playerChoice, computerChoice) {
-    if (playerChoice === "scissors" && computerChoice === "paper") {
+    if (playerChoice == "scissors" && computerChoice == "paper") {
         playerScore++;
-    } else {
-        computerScore++;
-    }
+    } 
+    computerScore++;
 }
 
 /*Function to determine overall winner */

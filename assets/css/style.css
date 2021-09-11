@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,200&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Glory', Arial, Sans-sarif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    margin: 2% 50px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Main Heading */
+#title {
+    text-align: center;
+    font-size: 200%;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+#options-buttons {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.scores {
+    border-style: solid;
+    border-color: black;
+    width: 25%;
+    height: 75px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* User Options Styling */
+#user-options {
+    width: 1%;
+    height: 300px;
+    margin: 2%;
+    position: absolute;
+}
+
+/* Gameboard Styling */
+#gameboard-container {
+    border-color: black;
+    border-style: solid;
+    height: 600px;
+    position: relative;
+}
+
+.choices {
+    border-color: black;
+    border-style: solid;
+    width: 25%;
+    height: auto;
+    margin: 2% auto;
+}
+
+#rules {
+    text-align: center;
+}
+
+/* Results Message */
+#result {
+    border-color: black;
+    border-style: solid;
+    width: 25%;
+    height: 300px;
+}

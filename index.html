@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description = "">
+    <meta keywords = "">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <title>Can You Rock, Paper, Scissors, Lizard, Spock?</title>
 </head>
 <body>
@@ -13,8 +14,9 @@
     <!--Heading Section of page to include score count and number of moves remaining-->
     <section id = "main-title-options">
         <div id = "options-buttons">
-            <button onClick = "startGame();" id = "start-game" class = "btn">Start Game</button>
-            <button onClick = "restart();" id = "restart" class = "btn">Restart</button>            
+            <button onClick = "returnHome();" id = "return-home" class = "btn title-btns">Return Home</button>
+            <button onClick = "startGame();" id = "start-game" class = "btn title-btns">Start Game</button>
+            <button onClick = "restart();" id = "restart" class = "btn title-btns">Restart</button>            
         </div>
         <div id = "scores-container" class = "container">
             <div id = "player-score" class = "scores"></div>
@@ -22,34 +24,31 @@
             <div id = "computer-score" class = "scores"></div>
         </div>
     </section>
-    <!--Section for list of user options for game-->
-    <section id = "user-options">
-    </section>
     <!--Game Area-->
     <section id = "gameboard-container" class = "container">
         <div id = "players-choice" class = "choices">
             <img src = "assets/images/r-p-s-l-p-generic.png" alt = "Image of all hand options including Rock, Paper, Scissors, Lizard, Spock" id = "player-image" class = "game-image">
         </div>
         <div id = "user-choices" class = "hide">
-            <button id = "rockBtn" class = "options-button" data-choice ="0">Rock</button>
-            <button id = "paperBtn" class = "options-button" data-choice ="1">Paper</button>
-            <button id = "scissorsBtn" class = "options-button" data-choice ="2">Scissors</button>
-            <button id = "lizardBtn" class = "options-button" data-choice ="3">Lizard</button>
-            <button id = "spockBtn" class = "options-button" data-choice ="4">Spock</button>
+            <button id = "rockBtn" class = "options-button btn" data-choice ="0">Rock</button>
+            <button id = "paperBtn" class = "options-button btn" data-choice ="1">Paper</button>
+            <button id = "scissorsBtn" class = "options-button btn" data-choice ="2">Scissors</button>
+            <button id = "lizardBtn" class = "options-button btn" data-choice ="3">Lizard</button>
+            <button id = "spockBtn" class = "options-button btn" data-choice ="4">Spock</button>
         </div>
         <div id = "rules" class = "choices">
             <h3>The Rules are as follows:</h3>
             <ul>
-                <li>Scissors cuts Paper</li>
-                <li>Paper covers Rock</li>
-                <li>Rock crushes Lizard</li>
-                <li>Lizard poisons Spock</li> 
-                <li>Spock smashes Scissors</li>
-                <li>Scissors decapitates Lizard</li>
-                <li>Lizard eats Paper</li>
-                <li>Paper disproves Spock</li>
-                <li>Spock Vaporizes Rock</li>
-                <li>And as it always has, Rock crushes Scissors</li>
+                <li>Scissors cuts Paper,</li>
+                <li>Paper covers Rock,</li>
+                <li>Rock crushes Lizard,</li>
+                <li>Lizard poisons Spock,</li> 
+                <li>Spock smashes Scissors,</li>
+                <li>Scissors decapitates Lizard,</li>
+                <li>Lizard eats Paper,</li>
+                <li>Paper disproves Spock,</li>
+                <li>Spock Vaporizes Rock,</li>
+                <li>And as it always has, Rock crushes Scissors.</li>
             </ul>
         </div>
         <div id = "computers-choice" class = "choices">
@@ -57,9 +56,9 @@
         </div>
     </section>
     <!--Section for Final Result Message-->
-    <section id = "result hide">
+    <section id = "result" class = "hide">
         <div id = "result-message"></div>
     </section>
-    <script src = "assets/js/script.js"></script>
+    <script src = "assets/js/game.js"></script>
 </body>
 </html>

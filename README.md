@@ -25,3 +25,7 @@ The game, *"Can you Rock, Paper, Scissors, Lizard, Spock?"* is an extension base
 - Images
     * Image for the generic Rock, Paper, Scissors, Lizard, Spock found from https://www.pngegg.com/en/png-ycasl
     * Individual images of all the playing pieces found on https://www.pngegg.com/en/png-iiamd
+
+https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+https://css-tricks.com/css3-gradients/
+

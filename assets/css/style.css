@@ -30,8 +30,6 @@ body {
 }
 
 .scores {
-    border-style: solid;
-    border-color: black;
     width: 25%;
     height: 75px;
     margin: 0 auto;
@@ -48,15 +46,11 @@ body {
 
 /* Gameboard Styling */
 #gameboard-container {
-    border-color: black;
-    border-style: solid;
     height: 600px;
     position: relative;
 }
 
 .choices {
-    border-color: black;
-    border-style: solid;
     width: 25%;
     height: auto;
     margin: 2% auto;
@@ -64,6 +58,13 @@ body {
 
 #rules {
     text-align: center;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 /* Results Message */

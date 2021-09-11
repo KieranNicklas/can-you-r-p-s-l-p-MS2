@@ -17,9 +17,9 @@
             <button onClick = "restart();" id = "restart" class = "btn">Restart</button>            
         </div>
         <div id = "scores-container" class = "container">
-            <div id = "player-score" class = "scores">Player Score = 0</div>
-            <div id = "number-of-moves" class = "scores">20 Moves out of 20 Left</div>
-            <div id = "computer-score" class = "scores">Computer Score = 0</div>
+            <div id = "player-score" class = "scores"></div>
+            <div id = "number-of-moves" class = "scores"></div>
+            <div id = "computer-score" class = "scores"></div>
         </div>
     </section>
     <!--Section for list of user options for game-->
@@ -27,13 +27,15 @@
     </section>
     <!--Game Area-->
     <section id = "gameboard-container" class = "container">
-        <div id = "players-choice" class = "choices"></div>
+        <div id = "players-choice" class = "choices">
+            <img src = "assets/images/r-p-s-l-p-generic.png" alt = "Image of all hand options including Rock, Paper, Scissors, Lizard, Spock" id = "player-image" class = "game-image">
+        </div>
         <div id = "user-choices" class = "hide">
-            <button id = "rockBtn" class = "options-button">Rock</button>
-            <button id = "paperBtn" class = "options-button">Paper</button>
-            <button id = "scissorsBtn" class = "options-button">Scissors</button>
-            <button id = "lizardBtn" class = "options-button">Lizard</button>
-            <button id = "spockBtn" class = "options-button">Spock</button>
+            <button id = "rockBtn" class = "options-button" data-choice ="0">Rock</button>
+            <button id = "paperBtn" class = "options-button" data-choice ="1">Paper</button>
+            <button id = "scissorsBtn" class = "options-button" data-choice ="2">Scissors</button>
+            <button id = "lizardBtn" class = "options-button" data-choice ="3">Lizard</button>
+            <button id = "spockBtn" class = "options-button" data-choice ="4">Spock</button>
         </div>
         <div id = "rules" class = "choices">
             <h3>The Rules are as follows:</h3>
@@ -50,7 +52,9 @@
                 <li>And as it always has, Rock crushes Scissors</li>
             </ul>
         </div>
-        <div id = "computers-choice" class = "choices"></div>
+        <div id = "computers-choice" class = "choices">
+            <img src = "assets/images/r-p-s-l-p-generic.png" alt = "Image of all hand options including Rock, Paper, Scissors, Lizard, Spock" id = "computer-image" class = "game-image">
+        </div>
     </section>
     <!--Section for Final Result Message-->
     <section id = "result hide">

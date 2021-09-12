@@ -7,14 +7,11 @@ const computersScore = document.getElementById ('computer-score');
 const playerImage = document.getElementById ('player-image');
 const computerImage = document.getElementById ('computer-image');
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-const userChoices = document.getElementById ('user-choices');
 const resultMessage = document.getElementById ('result-message');
 const gameboard = document.getElementById ('gameboard-container');
 const footer = document.getElementById ('footer');
 const contactUs = document.getElementById ('contact-us');
 const scoresContainer = document.getElementById ('scores-container');
-let roundScore = document.getElementById ('round-score');
-let result;
 
 /* Adds an event listener for the User buttons */
 for (let button of buttons){

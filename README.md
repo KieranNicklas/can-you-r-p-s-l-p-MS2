@@ -1,5 +1,7 @@
 # Can you Rock, Paper, Scissors, Lizard, Spock?
 
+![image](https://user-images.githubusercontent.com/85314939/132981531-941a64af-c445-4330-95f4-0e808d6139c5.png)
+
 The game, *"Can you Rock, Paper, Scissors, Lizard, Spock?"* is an extension based on the classic Rock, Paper, Scissors game with two additional options. The game design provides an opportunity for children and adults of all ages to play, with an element of chance to win each round against a randomized option from the computer. As the game is against the computer, there is a lesser chance of the round being a draw, and a greater chance of having an outright winner each time. 
 
 ## Features:
@@ -26,6 +28,23 @@ The game, *"Can you Rock, Paper, Scissors, Lizard, Spock?"* is an extension base
     * As an additional feature, I would like to add more options for the user and computer to select to expand the game's variation.
 
 ## Testing
+
+Each responsive item has been tested and each function as expected. However, despite the efforts within the JavaScript file, the allocation of the correct score does not work consistently. At times, the function checkScore() correctly determines what the selection of the player was against the computer and allocates the correct score, however other times this randomly allocates scores.
+
+* The project has been run through Google Chrome's Lighthouse function and returns the following results for Desktop:
+
+![image](https://user-images.githubusercontent.com/85314939/132981667-2f40aa13-81f3-4f6a-9c1a-1aedef1aa097.png)
+
+* And the following results for Mobile:
+
+![image](https://user-images.githubusercontent.com/85314939/132981767-302c0bda-a1fc-4a43-a4b3-82603e4403bc.png)
+
+The site was passed through the official WC3 Validator with one warning raised:
+* Section from line 17, column 5; to line 17, column 39 lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+The site was passed through the official CSS Jigsaw validator with no errors.
+
+The site was passed through the official Javascript validator JSHint and returned the following:
 
 
 ## Deployment

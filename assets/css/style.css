@@ -60,6 +60,11 @@ body {
     position: absolute;
 }
 
+#result-message {
+    margin-top: 10px;
+    text-align: center;
+}
+
 /* Gameboard Styling */
 #gameboard-container {
     height: 600px;
@@ -70,14 +75,6 @@ body {
     width: 25%;
     height: auto;
     margin: 2% auto;
-}
-
-#rules > ul {
-    list-style-type: none;
-}
-
-#rules > h3 {
-    text-align: center;
 }
 
 .game-image {
@@ -107,6 +104,34 @@ body {
 #spock {
     background-color: rgb(213,229,255);
 }
+
+/* Contact Us */
+#contact-us {
+    margin: 0 25%;
+}
+
+#contact-us-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-us-form > h3 {
+    text-align: justify;
+}
+
+.labels {
+    padding: 1% 0;
+}
+
+.contact-us-input {
+    width: 100%;
+}
+
+#submit-button {
+    margin-top: 1%;
+}
+
+
 
 /* Media Queries */
 

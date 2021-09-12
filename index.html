@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description = "">
-    <meta keywords = "">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "A simple Rock, Paper, Scissors, Lizard, Spock Game">
+    <meta name = "keywords" content = "Rock Paper Scissors Lizard Spock, Game">
+    <link rel ="stylesheet" href="assets/css/style.css">
     <title>Can You Rock, Paper, Scissors, Lizard, Spock?</title>
 </head>
 <body>
-    <header id = title>Can You Rock, Paper, Scissors, Lizard, Spock?</header>
+    <header id = title>
+        <h2>Can You Rock, Paper, Scissors, Lizard, Spock?</h2>
+    </header>
     <!--Heading Section of page to include score count and number of moves remaining-->
     <section id = "main-title-options">
         <div id = "options-buttons">
             <button onClick = "restart();" id = "restart" class = "btn title-btns">Restart</button>
+            <button onClick = "getInTouch();" class = "btn title-btns">Contact Us</button>
         </div>
         <div id = "scores-container" class = "container">
             <div id = "player-score" class = "scores"></div>
@@ -45,7 +48,22 @@
             <img src = "assets/images/r-p-s-l-p-generic.png" alt = "Image of all hand options including Rock, Paper, Scissors, Lizard, Spock" id = "computer-image" class = "game-image">
         </div>
     </section>
-    <footer>
+    <!--Contact Us Form-->
+    <section id = "contact-us" class = "hide">
+        <form action="https://formdump.codeinstitute.net/" method="post">
+            <div id = "contact-us-form">
+                <h3>Have ideas how we can improve our game? Get in touch below:</h3>
+                <label for = "fname" class = "labels">First Name</label>
+                <input type = "text" class = "contact-us-input" id = "fname" name = "first-name" placeholder = "Enter First Name" required>
+                <label for = "email" class = "labels">Email</label>
+                <input type = "text" class = "contact-us-input" id = "email" name = "email-address" placeholder = "Enter Email Address Here" required>
+                <label for = "get-in-touch" class = "labels">Get in Touch</label>
+                <textarea id = "get-in-touch" rows = "10" cols = "80" class = "contact-us-input" placeholder = "Enter your message here"></textarea>
+                <input type = "submit" id = "submit-button" value = "Get in Touch">
+            </div>
+        </form>
+    </section>
+    <footer id = "footer">
         <p><strong>Rules:</strong> Scissors cuts Paper | Paper covers Rock | Rock crushes Lizard | Lizard poisons Spock | Spock smashes Scissors | Scissors decapitates Lizard | Lizard eats Paper | Paper disproves Spock | Spock vaporizes Rock | And as it always has, Rock crushes Scissors</p>
     </footer>
     <script src = "assets/js/game.js"></script>

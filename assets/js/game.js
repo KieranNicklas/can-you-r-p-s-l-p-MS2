@@ -10,6 +10,9 @@ const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const userChoices = document.getElementById ('user-choices');
 const resultMessage = document.getElementById ('result-message');
 const gameboard = document.getElementById ('gameboard-container');
+const footer = document.getElementById ('footer');
+const contactUs = document.getElementById ('contact-us');
+const scoresContainer = document.getElementById ('scores-container');
 let roundScore = document.getElementById ('round-score');
 let result;
 
@@ -23,7 +26,6 @@ for (let button of buttons){
 
 /* Function to begin game and remove rules */
 function startGame(playerChoice) {
-    resultMessage.classList.add ('hide');
     playersScore.innerText = `
     Your Score = ${playerScore}`;
     computersScore.innerText = `
@@ -43,40 +45,37 @@ function startGame(playerChoice) {
 /* Function to determine winner of each round */
 function checkScore(playerChoice, computerChoice) {
     if (playerChoice == computerChoice) {
-        result = "It's a Tie";
+        resultMessage.innerText = "It's a Tie";
     } else if (playerChoice === "0" && (computerChoice === 2 || computerChoice === 3)) {
         playerScore++;
-        result = "Player Wins";
+        resultMessage.innerText = "Player Wins";
     } else if (playerChoice === "1" && (computerChoice === 0 || computerChoice === 4)) {
         playerScore++;
-        result = "Player Wins";
+        resultMessage.innerText = "Player Wins";
     } else if (playerChoice === "2" && (computerChoice === 1 || computerChoice === 3)) {
         playerScore++;
-        result = "Player Wins";
+        resultMessage.innerText = "Player Wins";
     } else if (playerChoice === "3" && (computerChoice === 1 || computerChoice === 4)) {
         playerScore++;
-        result = "Player Wins";
+        resultMessage.innerText = "Player Wins";
     } else if (playerChoice === "4" && (computerChoice === 2 || computerChoice === 0)) {
         playerScore++;
-        result = "Player Wins";
+        resultMessage.innerText = "Player Wins";
     } else {
         computerScore++;
-        result = "Computer Wins";
+        resultMessage.innerText = "Computer Wins";
     }   
-}
 
-/*Function to determine overall winner */
-function winner(playerScore, computerScore) {
-    result.classList.remove ('hide');
-    gameboard.classList.add ('hide');
-    if (playerScore > computerScore) {
-        resultMessage.innerText = "Congratulations, you win!";
-    } else {
-        resultMessage.innerText = "A loss today, but maybe victory tomorrow?";
-    }
 }
 /* Function to restart game */
-
 function restart() {
     location.reload();
+}
+
+/* Contact Us */
+function getInTouch(){
+    gameboard.classList.add ('hide');
+    footer.classList.add ('hide');
+    scoresContainer.classList.add ('hide');
+    contactUs.classList.remove ('hide');
 }

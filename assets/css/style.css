@@ -88,30 +88,96 @@ body {
 }
 
 /* Styles for individual buttons */
-#rockBtn {
+#rock {
     background-color: rgb(255,213,213);
 }
 
-#paperBtn {
+#paper {
     background-color: rgb(255,246,213);
 }
 
-#scissorsBtn {
+#scissors {
     background-color: rgb(246,213,255);
 }
 
-#lizardBtn {
+#lizard {
     background-color: rgb(215,244,215);
 }
 
-#spockBtn {
+#spock {
     background-color: rgb(213,229,255);
 }
-/* Results Message */
-#result {
-    border-color: black;
-    border-style: solid;
-    width: 100%;
-    height: 300px;
-    margin: 10% 0;
+
+/* Media Queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1025px) {
+    #title {
+        font-size: 150%;
+    }
+    .title-btns {
+        font-size: 80%;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 769px) {
+    #title {
+        font-size: 100%;
+    }
+    .title-btns {
+        height: 25px;
+        font-size: 60%;
+    }
+    .scores {
+        height: 40px;
+        font-size: 50%;
+    }
+
+    #gameboard-container {
+        height: 400px;
+    }
+
+    .container {
+        margin: 0 100px;
+    }
+
+    footer {
+        margin: 0 70px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #title {
+        font-size: 60%;
+    }
+    .title-btns {
+        height: 20px;
+        font-size: 35%;
+    }
+    .container {
+        margin: 0 10px;
+    }
+    .scores {
+        height: 30px;
+        font-size: 40%;
+    }
+    #gameboard-container {
+        height: 300px;
+    }
+    #user-choices {
+        width: 20%;
+    }
+
+    #result-message {
+        font-size: 60%;
+    }
+
+    footer {
+        font-size: 40%;
+        margin: 0 60px;
+    }
 }

@@ -1,29 +1,32 @@
 # Can you Rock, Paper, Scissors, Lizard, Spock?
 
-The game, *"Can you Rock, Paper, Scissors, Lizard, Spock?"* is an extension based on the classic Rock, Paper, Scissors game with two additional options. The game design provides an opportunity for children and adults of all ages to play, with an element of chance to win each round against a randomized option from the computer. As the game is against the computer, there is a lesser chance of the round being a draw, and a greater chance of having an outright winner at the end. 
+The game, *"Can you Rock, Paper, Scissors, Lizard, Spock?"* is an extension based on the classic Rock, Paper, Scissors game with two additional options. The game design provides an opportunity for children and adults of all ages to play, with an element of chance to win each round against a randomized option from the computer. As the game is against the computer, there is a lesser chance of the round being a draw, and a greater chance of having an outright winner each time. 
 
 ## Features:
 ### Existing Features:
 - Header
-    * The title of the game features dominantly at the top and center of the page, clearly displaying the game. The question mark, creates a personal feel the user as if the game is asking: *"Can you win this game"*
-    * The *Start Game* option is designed to allow the user more flexibility with what is displayed. It allows the rules to be visible when first accessing the site, but not once the game has begun.
-    * The two options stationed directly underneath the title allows the user to navigate the game. By selecting *restart*, the user will be taken to the beginning of the game, with all scores and move numbers reset.
-    ![header](https://user-images.githubusercontent.com/85314939/132958449-cfc2bd95-20ee-4a94-82d8-2f62c8358024.PNG)
+    * The title of the game features dominantly at the top and center of the page, clearly displaying the game with the *restart* button underneath. This option refreshes the page to allow the user to start again.
+    ![image](https://user-images.githubusercontent.com/85314939/132981375-6d806b43-4fe6-4916-bcf1-b2ec79b8521a.png)
 
 - The Game Area
-    * The game area provides a simplistic outlook on the overall scheme with consistent images of the five possible options in a different way. This area includes the rules to game and which option would win against which.
+    * The game area provides a simplistic outlook on the overall scheme with consistent images of the five possible options in a different way. The user selects one the button options to begin the game.
     
-    ![game-area](https://user-images.githubusercontent.com/85314939/132958463-964cc373-d3d4-4085-862c-edff5e6681d6.PNG)
+    ![image](https://user-images.githubusercontent.com/85314939/132981394-58e18810-fa29-4ad3-89da-6698ff7ff300.png)
+
+    * The footer consists of the rules and remains consistant throughout the entire game.
+    
+    ![image](https://user-images.githubusercontent.com/85314939/132981450-9084861e-3154-4850-b17e-f73f6e626b84.png)
 
 - Game Options
-    * Once the game has begun, the user is presented with five individual options which represent the elements of the game: Rock, Paper, Scissors, Lizard, Spock". The user selects one of the options, which then displays the corresponding image into the gameboard area. The computer instantly selects a random option and this in turn displays the corresponding image. The JavaScript then determines who the winner is based on the rules, and increments a point to to the winner. The one with the most points after 21 moves wins. The use of an odd number ensures that the game cannot be ended on a draw.
+    * Once the game has begun, the user is presented with five individual options which represent the elements of the game: Rock, Paper, Scissors, Lizard, Spock". The user selects one of the options, which then displays the corresponding image into the gameboard area. The computer instantly selects a random option and this in turn displays the corresponding image. The JavaScript then determines who the winner is based on the rules, and increments a point to to the winner.
 
-    ![game-in-action](https://user-images.githubusercontent.com/85314939/132958568-18d2ac8c-acee-47a7-bfb7-e4faefd534d4.PNG)
+    ![image](https://user-images.githubusercontent.com/85314939/132981399-678c114b-b08b-4fdf-a6d2-fb719a026930.png)
 
 - Additional Features
     * As an additional feature, I would like to add more options for the user and computer to select to expand the game's variation.
 
 ## Testing
+
 
 ## Deployment
 The site was developed using GitPod with a remote connection to Github:
